@@ -1,10 +1,13 @@
 const http = require('http');
-const colors = require('colors');
+const data = require('./data');
+const PORT = process.env.PORT || 3000;
 
-// http.createServer((req, resp)=>{
-//     resp.writeHead(201, 'Created the file')
-//     resp.write('This is the custom server')
-//     resp.end()
-// }).listen(4500);
-
-console.log('package'.red)
+http.createServer((req, resp)=>{
+    resp.writeHead(301, {
+        'Content-Type' : 'application/json'
+    })
+    resp.write(JSON.stringify(data))
+    resp.end()
+}).listen(PORT, ()=>{
+    console.log("Server is running at port 3000...")
+})
