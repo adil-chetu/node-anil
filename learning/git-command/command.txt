@@ -1,0 +1,36 @@
+git command
+ 
+1. ‘origin’ does not appear to be a git repository Solution How to solve this.
+git remote add https://github.com/adil-chetu/node-tuts.git (repository link https or ssh )
+
+2. To check the remote
+git remote -v
+
+3. To check the status of the git.
+git status
+
+4. To pull the data in current branch
+git pull origin branch name (current branch)
+
+5. To commit the code
+git commit -m "write the comment"
+
+6. To push the data on the remote repository
+git push origin branch name.
+
+7. To remove file or folder
+rm -rf filename or foldername
+
+8. To set the path of the repository 
+git remote set-url urlname
+
+9. To show the git log
+git log
+
+10. To merge two branch
+git merge (Branch name that is merging in main branch)
+after merging perform the git push command
+
+11. To merge the individual commit
+git cherry-pick commit-id 
+then git push origin branch name
